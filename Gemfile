@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'capybara'
+gem 'capybara', '~> 2.15.4'
 gem 'cucumber'
 gem 'junit_merge'
 gem 'rake'
