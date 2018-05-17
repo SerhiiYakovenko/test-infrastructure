@@ -8,7 +8,6 @@ require 'require_all'
 require_all 'pages'
 
 Capybara.app_host = 'https://www.google.com/?hl=en'
-Capybara.default_max_wait_time = 2
 Capybara.default_driver = :selenium
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
@@ -16,7 +15,7 @@ end
 
 Before do
   # set screen resolution
-  Capybara.page.driver.browser.manage.window.resize_to(800, 600)
+  Capybara.page.driver.browser.manage.window.resize_to(1024, 768)
 end
 
 After do
