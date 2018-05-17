@@ -1,0 +1,1 @@
+default: --format pretty --format rerun --out artifacts/final_test_reports/fails.log --format junit --out artifacts/junit_xml_reports --format json --out artifacts/cucumber_json_reports/run.json

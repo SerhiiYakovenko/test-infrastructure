@@ -1,0 +1,8 @@
+.idea/
+Gemfile.lock
+artifacts/test_rail_results/*.json
+artifacts/test_run_id.txt
+artifacts/junit_reports/*.xml
+artifacts/*_user.json
+debug.log
+artifacts/
