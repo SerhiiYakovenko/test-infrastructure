@@ -16,7 +16,7 @@ end
 
 Before do
   #Make fullscreen
-  Capybara.page.driver.browser.manage.window.maximize
+  Capybara.page.driver.browser.manage.window.resize_to(800, 600)
 end
 
 After do
