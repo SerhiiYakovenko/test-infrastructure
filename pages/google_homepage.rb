@@ -5,6 +5,6 @@ class GoogleHomepage < SitePrism::Page
   # ELEMENTS
   element :google_logo,                '#hplogo'
   element :search_field,               'input[name="q"]'
-  element :search_button,            :xpath, '//div/span[1]/span/input'
+  element :search_button,              'span input[value="Google Search"]'
 
 end
