@@ -5,6 +5,7 @@ end
 When("I search for some data") do
   @used_word = random_word
   @google_homepage.search_field.set @used_word
+  sleep 1
   @google_homepage.search_button.click
 end
 
