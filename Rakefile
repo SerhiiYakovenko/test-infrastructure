@@ -113,6 +113,9 @@ task :clean_folders do
   dirs = Dir.entries(catalog).drop 2
   dirs.delete('final_test_reports')
   dirs.map! { |f| "#{catalog}/#{f}" }
+  dirs.each do |dir_path|
+    remove_dir dir_path
+  end
 end
 
 desc 'Cleaning project tree from unnecessary files and folders'
