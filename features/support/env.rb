@@ -15,7 +15,7 @@ Capybara.register_driver :selenium do |app|
 end
 
 Before do
-  #Make fullscreen
+  # set screen resolution
   Capybara.page.driver.browser.manage.window.resize_to(800, 600)
 end
 
