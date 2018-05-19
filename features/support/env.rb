@@ -6,16 +6,23 @@ require 'site_prism'
 require 'require_all'
 
 require_all 'pages'
-
 Capybara.app_host = 'https://www.google.com/?hl=en'
-Capybara.default_driver = :selenium
-Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, browser: :chrome)
+
+caps = Selenium::WebDriver::Remote::Capabilities.new
+caps["browserName"] = "firefox"
+caps["version"] = "60.0"
+caps["enableVNC"] = true
+
+Capybara.default_driver = :remote
+Capybara.register_driver :remote do |app|
+  Capybara::Selenium::Driver.new(app, browser: :remote,
+                                 :url => "http://localhost:4444/wd/hub",
+                                 :desired_capabilities => caps)
 end
 
 Before do
   # set screen resolution
-  Capybara.page.driver.browser.manage.window.resize_to(1024, 768)
+  Capybara.page.driver.browser.manage.window.resize_to(1920, 1080)
 end
 
 After do
