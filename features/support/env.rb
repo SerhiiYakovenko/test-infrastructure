@@ -9,8 +9,8 @@ require_all 'pages'
 Capybara.app_host = 'https://www.google.com/?hl=en'
 
 caps = Selenium::WebDriver::Remote::Capabilities.new
-caps["browserName"] = "firefox"
-caps["version"] = "60.0"
+caps["browserName"] = "chrome"
+caps["version"] = "66.0"
 caps["enableVNC"] = true
 
 Capybara.default_driver = :remote
