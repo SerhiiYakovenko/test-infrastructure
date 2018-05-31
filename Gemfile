@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'capybara'
+gem 'capybara', '2.18.0'
 gem 'cucumber'
 gem 'junit_merge'
+gem 'parallel_tests'
 gem 'rake'
 gem 'require_all'
 gem 'rspec-expectations'

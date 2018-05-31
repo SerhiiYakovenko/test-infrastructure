@@ -16,9 +16,14 @@ caps["enableVNC"] = true
 Capybara.default_driver = :remote
 Capybara.register_driver :remote do |app|
   Capybara::Selenium::Driver.new(app, browser: :remote,
-                                 :url => "http://localhost:4444/wd/hub",
+                                 :url => "http://209.97.133.6:4444/wd/hub",
                                  :desired_capabilities => caps)
 end
+
+# Capybara.default_driver = :selenium
+# Capybara.register_driver :selenium do |app|
+#   Capybara::Selenium::Driver.new(app, browser: :chrome)
+# end
 
 Before do
   # set screen resolution

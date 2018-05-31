@@ -48,7 +48,7 @@ end
 
 desc 'Run Cucumber features for the first run'
 task :run_cucumber do
-  sh "cucumber" do
+  sh "parallel_cucumber features/" do
     #ignore errors
   end
 end
