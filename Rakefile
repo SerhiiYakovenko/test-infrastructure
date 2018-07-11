@@ -55,7 +55,7 @@ end
 
 desc 'Rerun Cucumber features according to the fails.log'
 task :rerun_failed do
-  sh "cucumber @artifacts/final_test_reports/fails.log" do
+  sh "cucumber artifacts/final_test_reports/fails.log" do
     #ignore errors
   end
 end
