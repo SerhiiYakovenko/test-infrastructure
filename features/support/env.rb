@@ -6,7 +6,7 @@ require 'site_prism'
 require 'require_all'
 
 require_all 'pages'
-Capybara.app_host = 'https://www.google.com/?hl=en'
+Capybara.app_host = 'https://duckduckgo.com/'
 
 caps = Selenium::WebDriver::Remote::Capabilities.new
 caps["browserName"] = "chrome"

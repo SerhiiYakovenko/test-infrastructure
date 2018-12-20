@@ -1,42 +1,17 @@
-Feature: Simple Google search test 1
-  Everybody wants to search in Google
+Feature: Simple Duck search test 1111
+  Everybody wants to search in Duck
 
-  Scenario: Google search 1
-    Given I visit Google homepage
+  Scenario: Duck search 1111
+    Given I visit Duck homepage
     When I search for some data
     Then I see results
 
-  Scenario: Google search 2
-    Given I visit Google homepage
+  Scenario: Duck search 2222
+    Given I visit Duck homepage
     When I search for some data
     Then I see results
 
-  Scenario: Google search 3
-    Given I visit Google homepage
-    When I search for some data
-    Then I see results
-
-  Scenario: Google search 4
-    Given I visit Google homepage
-    When I search for some data
-    Then I see results
-
-  Scenario: Google search 5
-    Given I visit Google homepage
-    When I search for some data
-    Then I see results
-
-  Scenario: Google search 6
-    Given I visit Google homepage
-    When I search for some data
-    Then I see results
-
-  Scenario: Google search 7
-    Given I visit Google homepage
-    When I search for some data
-    Then I see results
-
-  Scenario: Google search 8
-    Given I visit Google homepage
+  Scenario: Duck search 3333
+    Given I visit Duck homepage
     When I search for some data
     Then I see results

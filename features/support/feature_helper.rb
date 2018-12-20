@@ -2,8 +2,8 @@
 
 module FeatureHelper
   def visit_homepage
-    @google_homepage = GoogleHomepage.new
-    @google_homepage.load
+    @duck_homepage = DuckHomepage.new
+    @duck_homepage.load
   end
 
   def random_word

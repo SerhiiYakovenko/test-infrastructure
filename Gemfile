@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'capybara', '2.18.0'
+gem 'capybara'
 gem 'cucumber'
 gem 'junit_merge'
 gem 'parallel_tests'
